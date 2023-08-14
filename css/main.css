@@ -1,0 +1,1934 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap");
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/base/_base.scss */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 5, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/base/_base.scss */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/base/_base.scss */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 16, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/base/_base.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+/* line 22, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/base/_base.scss */
+a:hover {
+  color: #FF744F;
+  text-decoration: underline;
+}
+
+/* line 28, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/base/_base.scss */
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* line 34, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/base/_base.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #272727;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* line 47, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/base/_base.scss */
+*::-webkit-input-placeholder {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+*::-moz-placeholder {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+*:-ms-input-placeholder {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+*::-ms-input-placeholder {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+input, textarea, *::placeholder {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* line 55, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/base/_base.scss */
+textarea:focus, input:focus {
+  outline: none;
+}
+
+/* line 59, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/base/_base.scss */
+button {
+  padding: 0;
+  border: none;
+}
+
+/* line 64, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/base/_base.scss */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* Tablet */
+  /* Mobile */
+  /* Mobile XS */
+}
+
+@media (max-width: 1169px) {
+  /* line 64, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/base/_base.scss */
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 899px) {
+  /* line 64, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/base/_base.scss */
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 64, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/base/_base.scss */
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_logo.scss */
+.logo {
+  width: 57px;
+  height: 45px;
+  background-image: url("./../img/icons/logo.svg");
+  background-size: cover;
+  /* Tablet */
+}
+
+@media (max-width: 768px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_logo.scss */
+  .logo {
+    width: 47px;
+    height: 37px;
+  }
+}
+
+/* line 15, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_logo.scss */
+.footer .logo {
+  width: 75px;
+  height: 59px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-image: url("./../img/icons/footer-logo.svg");
+  background-size: cover;
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_titles.scss */
+.title {
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
+  font-weight: 700;
+  /* Mobile */
+  /* Mobile XS */
+}
+
+@media (max-width: 899px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_titles.scss */
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_titles.scss */
+  .title {
+    font-size: 26px;
+  }
+}
+
+/* line 17, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_titles.scss */
+.title-2 {
+  font-family: 'Merriweather', serif;
+  font-size: 32px;
+  font-weight: 700;
+  /* Mobile */
+  /* Mobile XS */
+}
+
+@media (max-width: 899px) {
+  /* line 17, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_titles.scss */
+  .title-2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 17, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_titles.scss */
+  .title-2 {
+    font-size: 22px;
+  }
+}
+
+/* line 32, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_titles.scss */
+.title-2 span {
+  color: #FF744F;
+}
+
+/* line 37, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_titles.scss */
+.title-3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #FF744F;
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_buttons.scss */
+.button {
+  display: inline-block;
+  height: 50px;
+  padding: 0 28px;
+  background-color: #FF744F;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  line-height: 50px;
+  color: #fff;
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_block.scss */
+.block {
+  position: relative;
+  display: block;
+  margin-bottom: 70px;
+  padding: 30px 0;
+  background-color: #fff;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  /* Mobile XS */
+}
+
+/* line 14, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_block.scss */
+.block--accent {
+  padding: 30px 36px;
+  background-color: #FF744F;
+  color: #fff;
+  /* Mobile XS */
+}
+
+@media (max-width: 599px) {
+  /* line 14, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_block.scss */
+  .block--accent {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_block.scss */
+  .block {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+  }
+}
+
+/* line 34, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_block.scss */
+.block:last-child {
+  margin-bottom: 0;
+}
+
+/* line 38, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_block.scss */
+.block::before {
+  content: '1';
+  position: absolute;
+  bottom: 75%;
+  left: 50%;
+  -webkit-transform: translateY(-75%);
+          transform: translateY(-75%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 4px 16px 0px rgba(39, 45, 68, 0.12);
+          box-shadow: 1px 4px 16px 0px rgba(39, 45, 68, 0.12);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 60px;
+  color: #FF744F;
+  /* Mobile XS */
+}
+
+@media (max-width: 599px) {
+  /* line 38, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_block.scss */
+  .block::before {
+    bottom: 80%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+
+/* line 72, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_block.scss */
+.block:nth-child(2)::before {
+  content: '2';
+}
+
+/* line 76, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_block.scss */
+.block:last-child::before {
+  content: '3';
+  background-color: #FF744F;
+  color: #fff;
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_card.scss */
+.card {
+  width: 460px;
+  padding: 0 10px;
+  /* Tablet */
+  /* Mobile XS */
+}
+
+@media (max-width: 1169px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_card.scss */
+  .card {
+    width: 420px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_card.scss */
+  .card {
+    width: 100%;
+  }
+}
+
+/* line 16, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_card.scss */
+.card__img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  overflow: hidden;
+  /* Mobile XS */
+}
+
+@media (max-width: 599px) {
+  /* line 16, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_card.scss */
+  .card__img {
+    margin-bottom: 15px;
+  }
+}
+
+/* line 29, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_card.scss */
+.card__title {
+  margin-bottom: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  /* Mobile XS */
+}
+
+@media (max-width: 599px) {
+  /* line 29, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_card.scss */
+  .card__title {
+    font-size: 18px;
+  }
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_slider.scss */
+.slider {
+  width: 396px;
+  /* Mobile XS */
+}
+
+/* line 4, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_slider.scss */
+.slider img {
+  cursor: pointer;
+}
+
+@media (max-width: 599px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_slider.scss */
+  .slider {
+    width: 100%;
+  }
+}
+
+/* line 14, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_slider.scss */
+.swiper {
+  width: 396px;
+  /* Mobile XS */
+}
+
+@media (max-width: 599px) {
+  /* line 14, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_slider.scss */
+  .swiper {
+    width: 100%;
+  }
+}
+
+/* line 24, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_slider.scss */
+#magnify {
+  display: none;
+  position: fixed;
+  max-width: 1000px;
+  height: 100vh;
+  z-index: 9;
+  /* Mobile XS */
+}
+
+@media (max-width: 400px) {
+  /* line 24, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_slider.scss */
+  #magnify {
+    max-width: 100%;
+    height: 440px;
+  }
+}
+
+/* line 39, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_slider.scss */
+#magnify img {
+  width: 100%;
+}
+
+/* затемняющий фон */
+/* line 44, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_slider.scss */
+#overlay {
+  display: none;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 8;
+}
+
+/* кнопка закрытия */
+/* line 57, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_slider.scss */
+#close-popup {
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  /* Mobile XS */
+}
+
+@media (max-width: 599px) {
+  /* line 57, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_slider.scss */
+  #close-popup {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/* line 74, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_slider.scss */
+#close-popup i {
+  width: 30px;
+  height: 30px;
+  background: url("./../img/icons/cross.svg") no-repeat center center;
+  background-size: 16px 16px;
+  display: block;
+}
+
+@-webkit-keyframes rota {
+  25% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rota {
+  25% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* line 86, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_slider.scss */
+#close-popup:hover {
+  -webkit-animation: rota 4s infinite normal;
+          animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_cta.scss */
+.cta__title {
+  margin-bottom: 40px;
+  /* Mobile XS */
+}
+
+@media (max-width: 599px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_cta.scss */
+  .cta__title {
+    margin-bottom: 25px;
+  }
+}
+
+/* line 10, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_cta.scss */
+.cta__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  /* Mobile */
+}
+
+@media (max-width: 899px) {
+  /* line 10, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_cta.scss */
+  .cta__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/* line 23, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_cta.scss */
+.cta__card {
+  width: 264px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  text-align: left;
+  /* Mobile */
+  /* Mobile XS */
+}
+
+@media (max-width: 899px) {
+  /* line 23, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_cta.scss */
+  .cta__card {
+    width: 290px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 23, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_cta.scss */
+  .cta__card {
+    width: 100%;
+  }
+}
+
+/* line 40, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_cta.scss */
+.cta__card:last-child {
+  position: relative;
+  /* Tablet */
+  /* Mobile */
+  /* Mobile XS */
+}
+
+/* line 43, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_cta.scss */
+.cta__card:last-child::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -30px;
+  width: 120px;
+  height: 120px;
+  background-image: url("./../img/icons/calculator.svg");
+  background-size: cover;
+  /* Mobile */
+}
+
+@media (max-width: 899px) {
+  /* line 43, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_cta.scss */
+  .cta__card:last-child::after {
+    display: none;
+  }
+}
+
+@media (max-width: 1169px) {
+  /* line 40, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_cta.scss */
+  .cta__card:last-child {
+    width: 169px;
+  }
+}
+
+@media (max-width: 899px) {
+  /* line 40, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_cta.scss */
+  .cta__card:last-child {
+    width: 290px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 40, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_cta.scss */
+  .cta__card:last-child {
+    width: 100%;
+  }
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_nav-button.scss */
+.nav-button {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 31px;
+  background-color: transparent;
+  /* Mobile */
+}
+
+@media (max-width: 899px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_nav-button.scss */
+  .nav-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* line 17, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_nav-button.scss */
+.nav-button__middle {
+  position: relative;
+  width: 50px;
+  height: 5px;
+  background-color: #BBC1D9;
+}
+
+/* line 24, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_nav-button.scss */
+.nav-button__middle::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 50px;
+  height: 5px;
+  background-color: #BBC1D9;
+  -webkit-transition: top .2s linear .2s, -webkit-transform .2s ease-in;
+  transition: top .2s linear .2s, -webkit-transform .2s ease-in;
+  transition: transform .2s ease-in, top .2s linear .2s;
+  transition: transform .2s ease-in, top .2s linear .2s, -webkit-transform .2s ease-in;
+}
+
+/* line 38, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_nav-button.scss */
+.nav-button__middle::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 50px;
+  height: 5px;
+  background-color: #BBC1D9;
+  -webkit-transition: top .2s linear .2s, -webkit-transform .2s ease-in;
+  transition: top .2s linear .2s, -webkit-transform .2s ease-in;
+  transition: transform .2s ease-in, top .2s linear .2s;
+  transition: transform .2s ease-in, top .2s linear .2s, -webkit-transform .2s ease-in;
+}
+
+/* line 53, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_nav-button.scss */
+.nav-button.nav-button--active .nav-button__middle {
+  position: fixed;
+  z-index: 3;
+  background-color: transparent;
+}
+
+/* line 59, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_nav-button.scss */
+.nav-button.nav-button--active .nav-button__middle::before, .nav-button.nav-button--active .nav-button__middle::after {
+  top: 0;
+  -webkit-transition: top .2s linear, -webkit-transform .2s ease-in .2s;
+  transition: top .2s linear, -webkit-transform .2s ease-in .2s;
+  transition: top .2s linear, transform .2s ease-in .2s;
+  transition: top .2s linear, transform .2s ease-in .2s, -webkit-transform .2s ease-in .2s;
+}
+
+/* line 65, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_nav-button.scss */
+.nav-button.nav-button--active .nav-button__middle::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+/* line 69, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_nav-button.scss */
+.nav-button.nav-button--active .nav-button__middle::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_nav-menu.scss */
+.nav-menu {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* line 13, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_nav-menu.scss */
+.nav-menu--active {
+  display: block;
+}
+
+/* line 18, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_nav-menu.scss */
+.nav-menu__list {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 360px;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 40px;
+  padding: 60px 0;
+  background-color: #fff;
+  border: 10px solid #3F4F8B;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  /* Mobile XS */
+}
+
+@media (max-width: 599px) {
+  /* line 18, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_nav-menu.scss */
+  .nav-menu__list {
+    width: 320px;
+  }
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.hidden-form {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  border: 10px solid #3F4F8B;
+  overflow: auto;
+}
+
+/* line 15, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.hidden-form--active {
+  display: block;
+}
+
+/* line 20, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.hidden-form__wrapper {
+  position: relative;
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 60px;
+  background-color: #fff;
+  /* Mobile XS */
+}
+
+@media (max-width: 599px) {
+  /* line 20, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+  .hidden-form__wrapper {
+    width: 100%;
+    padding: 30px 10px;
+  }
+}
+
+/* line 36, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.hidden-form__cross {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  background-image: url("./../img/icons/cross.svg");
+  background-color: transparent;
+  /* Mobile XS */
+}
+
+/* line 47, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.hidden-form__cross:hover {
+  -webkit-animation: rota 4s infinite normal;
+          animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@media (max-width: 599px) {
+  /* line 36, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+  .hidden-form__cross {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/* line 60, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.hidden-form__title {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* line 66, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.form {
+  width: 50%;
+  margin: 0 auto;
+  /* Tablet */
+  /* Mobile */
+}
+
+/* line 70, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.form input, .form select {
+  width: 100%;
+  height: 46px;
+  padding: 0 18px;
+  border: 1px solid #3F4F8B;
+  line-height: 46px;
+}
+
+@media (max-width: 1139px) {
+  /* line 66, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+  .form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 899px) {
+  /* line 66, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+  .form {
+    width: 80%;
+  }
+}
+
+/* line 92, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.form .checkbox {
+  width: auto;
+  height: auto;
+}
+
+/* line 98, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.form__block {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/* line 102, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.form__block:last-of-type {
+  width: 100%;
+}
+
+/* line 106, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.form__block p {
+  margin-bottom: 8px;
+}
+
+/* line 111, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.form__block:first-child input {
+  margin-bottom: 16px;
+}
+
+/* line 114, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.form__block:first-child input:last-child {
+  margin-bottom: 0;
+}
+
+/* line 119, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+input.checkbox {
+  margin-right: 16px;
+}
+
+/* line 123, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.hidden-form a {
+  text-decoration: underline;
+}
+
+/* line 127, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.hidden-form .button__consent {
+  text-decoration: underline;
+}
+
+/* line 131, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_form-hidden.scss */
+.hidden-form .button__privacy {
+  text-decoration: underline;
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_consent.scss */
+.consent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* line 16, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_consent.scss */
+.consent--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 21, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_consent.scss */
+.consent__wrapper {
+  position: relative;
+  width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border: 4px solid #3F4F8B;
+  /* Mobile XS */
+  /* Mobile XS */
+  /* Mobile XS */
+}
+
+@media (max-width: 599px) {
+  /* line 21, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_consent.scss */
+  .consent__wrapper {
+    width: 100%;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 510px) {
+  /* line 21, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_consent.scss */
+  .consent__wrapper {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 385px) {
+  /* line 21, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_consent.scss */
+  .consent__wrapper {
+    font-size: 12.5px;
+  }
+}
+
+/* line 44, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_consent.scss */
+.consent__wrapper span {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* line 53, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_consent.scss */
+.consent__cross {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  background-image: url("./../img/icons/cross.svg");
+  background-color: transparent;
+}
+
+/* line 64, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_consent.scss */
+.consent__cross:hover {
+  -webkit-animation: rota 4s infinite normal;
+          animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/* line 71, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_consent.scss */
+.button__consent {
+  background-color: transparent;
+  font-size: inherit;
+  color: inherit;
+  -webkit-transition: color .2s ease-in;
+  transition: color .2s ease-in;
+}
+
+/* line 79, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_consent.scss */
+.button__consent:hover {
+  color: #FF744F;
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_privacy.scss */
+.privacy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* line 16, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_privacy.scss */
+.privacy--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 21, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_privacy.scss */
+.privacy__wrapper {
+  position: relative;
+  width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border: 4px solid #3F4F8B;
+  /* Mobile XS */
+  /* Mobile XS */
+  /* Mobile XS */
+}
+
+@media (max-width: 599px) {
+  /* line 21, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_privacy.scss */
+  .privacy__wrapper {
+    width: 100%;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 510px) {
+  /* line 21, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_privacy.scss */
+  .privacy__wrapper {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 385px) {
+  /* line 21, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_privacy.scss */
+  .privacy__wrapper {
+    font-size: 12.5px;
+  }
+}
+
+/* line 45, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_privacy.scss */
+.privacy__wrapper span {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* line 54, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_privacy.scss */
+.privacy__cross {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  background-image: url("./../img/icons/cross.svg");
+  background-color: transparent;
+}
+
+/* line 65, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_privacy.scss */
+.privacy__cross:hover {
+  -webkit-animation: rota 4s infinite normal;
+          animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/* line 72, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_privacy.scss */
+.button__privacy {
+  background-color: transparent;
+  font-size: inherit;
+  color: inherit;
+  -webkit-transition: color .2s ease-in;
+  transition: color .2s ease-in;
+}
+
+/* line 80, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/blocks/_privacy.scss */
+.button__privacy:hover {
+  color: #FF744F;
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+.header-top {
+  padding: 15px 0;
+}
+
+/* line 5, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+.header-top__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 11, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+.header-top__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 14px;
+     -moz-column-gap: 14px;
+          column-gap: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 16, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+.header-top__logo span {
+  width: 62px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* line 25, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 80px;
+     -moz-column-gap: 80px;
+          column-gap: 80px;
+  font-family: 'Open Sans', sans-serif;
+  /* Mobile */
+}
+
+@media (max-width: 899px) {
+  /* line 25, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+  .header__nav {
+    display: none;
+  }
+}
+
+/* line 37, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 34px;
+     -moz-column-gap: 34px;
+          column-gap: 34px;
+}
+
+/* line 44, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+.link span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #FF744F;
+}
+
+@media (max-width: 599px) {
+  /* line 53, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+  .header-top .link {
+    display: none;
+  }
+}
+
+/* line 60, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+.header {
+  padding: 120px 0 134px;
+  /* Tablet */
+  /* Mobile */
+  /* Mobile XS */
+}
+
+@media (max-width: 1169px) {
+  /* line 60, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+  .header {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 899px) {
+  /* line 60, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+  .header {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 60, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+  .header {
+    padding: 40px 0;
+  }
+}
+
+/* line 79, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+.header-wrapper {
+  position: relative;
+}
+
+/* line 83, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+.header__content {
+  position: relative;
+  z-index: 2;
+  width: 754px;
+  /* Mobile */
+  /* Mobile XS */
+}
+
+@media (max-width: 899px) {
+  /* line 83, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+  .header__content {
+    width: 550px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 83, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+  .header__content {
+    width: 100%;
+  }
+}
+
+/* line 100, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+.header__title {
+  margin-bottom: 30px;
+  /* Mobile */
+}
+
+@media (max-width: 899px) {
+  /* line 100, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+  .header__title {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 109, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+.header__subtitle {
+  margin-bottom: 40px;
+  font-size: 20px;
+  /* Mobile */
+}
+
+@media (max-width: 899px) {
+  /* line 109, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+  .header__subtitle {
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+}
+
+/* line 122, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+.header__img {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  -webkit-transform: translateX(-55%);
+          transform: translateX(-55%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  width: 769px;
+  height: 451px;
+  overflow: hidden;
+  /* Tablet */
+  /* Mobile */
+}
+
+@media (max-width: 1169px) {
+  /* line 122, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+  .header__img {
+    top: 80%;
+    left: 60%;
+    width: 528px;
+    height: 309px;
+  }
+}
+
+@media (max-width: 899px) {
+  /* line 122, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_header.scss */
+  .header__img {
+    display: none;
+  }
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_timeline.scss */
+.timeline {
+  padding: 75px 15px 80px;
+  background-color: #3F4F8B;
+  /* Mobile */
+  /* Mobile XS */
+}
+
+@media (max-width: 899px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_timeline.scss */
+  .timeline {
+    padding: 60px 15px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_timeline.scss */
+  .timeline {
+    padding: 40px 15px;
+  }
+}
+
+/* line 17, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_timeline.scss */
+.timeline__inner {
+  max-width: 558px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 24, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_timeline.scss */
+.timeline__title {
+  margin-bottom: 85px;
+  color: #fff;
+  /* Tablet */
+  /* Mobile XS */
+}
+
+@media (max-width: 768px) {
+  /* line 24, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_timeline.scss */
+  .timeline__title {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 24, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_timeline.scss */
+  .timeline__title {
+    margin-bottom: 60px;
+  }
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_services.scss */
+.services {
+  padding: 100px 0;
+  text-align: center;
+  /* Tablet */
+  /* Mobile */
+  /* Mobile XS */
+}
+
+@media (max-width: 1169px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_services.scss */
+  .services {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 899px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_services.scss */
+  .services {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_services.scss */
+  .services {
+    padding: 40px 0;
+  }
+}
+
+/* line 21, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_services.scss */
+.services__title {
+  margin-bottom: 40px;
+}
+
+/* line 25, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_services.scss */
+.services__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 74px;
+  /* Tablet */
+  /* Mobile */
+}
+
+@media (max-width: 1169px) {
+  /* line 25, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_services.scss */
+  .services__cards {
+    row-gap: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 899px) {
+  /* line 25, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_services.scss */
+  .services__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_control.scss */
+.control {
+  padding-bottom: 100px;
+  /* Tablet */
+  /* Mobile */
+  /* Mobile XS */
+}
+
+@media (max-width: 1169px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_control.scss */
+  .control {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 899px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_control.scss */
+  .control {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_control.scss */
+  .control {
+    padding-bottom: 40px;
+  }
+}
+
+/* line 20, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_control.scss */
+.control__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Tablet */
+  /* Mobile */
+}
+
+@media (max-width: 1169px) {
+  /* line 20, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_control.scss */
+  .control__wrapper {
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+  }
+}
+
+@media (max-width: 899px) {
+  /* line 20, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_control.scss */
+  .control__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+/* line 37, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_control.scss */
+.control__slider {
+  position: relative;
+  z-index: 1;
+  width: 396px;
+  margin: 0 auto;
+  /* Mobile XS */
+}
+
+@media (max-width: 599px) {
+  /* line 37, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_control.scss */
+  .control__slider {
+    width: 100%;
+  }
+}
+
+/* line 51, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_control.scss */
+.control__desc {
+  width: 460px;
+  /* Mobile XS */
+}
+
+@media (max-width: 599px) {
+  /* line 51, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_control.scss */
+  .control__desc {
+    width: 100%;
+  }
+}
+
+/* line 60, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_control.scss */
+.control__title {
+  margin-bottom: 30px;
+  /* Mobile XS */
+}
+
+@media (max-width: 599px) {
+  /* line 60, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_control.scss */
+  .control__title {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 69, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_control.scss */
+.control__text {
+  padding-right: 6px;
+  /* Mobile XS */
+}
+
+@media (max-width: 599px) {
+  /* line 69, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_control.scss */
+  .control__text {
+    padding-right: 0;
+  }
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_price.scss */
+.price {
+  padding-bottom: 80px;
+  text-align: center;
+  /* Mobile */
+  /* Mobile XS */
+}
+
+@media (max-width: 899px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_price.scss */
+  .price {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_price.scss */
+  .price {
+    padding-bottom: 40px;
+  }
+}
+
+/* line 17, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_price.scss */
+.price__title {
+  margin-bottom: 40px;
+  /* Mobile */
+}
+
+@media (max-width: 899px) {
+  /* line 17, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_price.scss */
+  .price__title {
+    margin-bottom: 25px;
+  }
+}
+
+/* line 26, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_price.scss */
+.price__desc {
+  max-width: 754px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  /* Mobile */
+  /* Mobile XS */
+}
+
+@media (max-width: 899px) {
+  /* line 26, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_price.scss */
+  .price__desc {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 26, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_price.scss */
+  .price__desc {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 42, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_price.scss */
+.price__img {
+  margin-bottom: 40px;
+  /* Mobile XS */
+}
+
+@media (max-width: 599px) {
+  /* line 42, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_price.scss */
+  .price__img {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 51, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_price.scss */
+.price__cta {
+  width: 950px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 50px 0 54px;
+  border: 4px solid #3F4F8B;
+  /* Tablet */
+  /* Mobile */
+  /* Mobile XS */
+}
+
+@media (max-width: 1169px) {
+  /* line 51, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_price.scss */
+  .price__cta {
+    width: 870px;
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 899px) {
+  /* line 51, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_price.scss */
+  .price__cta {
+    width: 570px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 51, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_price.scss */
+  .price__cta {
+    width: 100%;
+  }
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+.contacts {
+  padding-bottom: 100px;
+  /* Tablet */
+  /* Mobile */
+  /* Mobile XS */
+}
+
+@media (max-width: 1169px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+  .contacts {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 899px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+  .contacts {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+  .contacts {
+    padding-bottom: 40px;
+  }
+}
+
+/* line 20, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Mobile */
+}
+
+@media (max-width: 899px) {
+  /* line 20, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+  .contacts__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+/* line 33, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+.contacts__card {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 625px;
+  height: 526px;
+  margin-right: 15px;
+  overflow: hidden;
+  border: 22px solid #3F4F8B;
+  /* Tablet */
+  /* Mobile */
+  /* Mobile XS */
+}
+
+@media (max-width: 1169px) {
+  /* line 33, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+  .contacts__card {
+    width: 460px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 899px) {
+  /* line 33, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+  .contacts__card {
+    width: 100%;
+    height: 450px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 33, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+  .contacts__card {
+    height: 290px;
+  }
+}
+
+/* line 61, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+.contacts__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 362px;
+  /* Mobile */
+  /* Mobile XS */
+}
+
+@media (max-width: 899px) {
+  /* line 61, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+  .contacts__desc {
+    width: 570px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 61, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+  .contacts__desc {
+    width: 100%;
+  }
+}
+
+/* line 79, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+.contacts__title {
+  margin-bottom: 8px;
+  color: #FF744F;
+}
+
+/* line 85, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+.contacts__subtitle {
+  margin-bottom: 40px;
+}
+
+/* line 89, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+.contacts .link {
+  margin-bottom: 20px;
+}
+
+/* line 93, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_contacts.scss */
+.contacts .button {
+  display: inline-block;
+  width: 191px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* line 1, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_footer.scss */
+.footer {
+  padding: 40px 0 50px;
+  background-color: #3F4F8B;
+  color: #fff;
+}
+
+/* line 9, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_footer.scss */
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  /* Mobile */
+}
+
+@media (max-width: 899px) {
+  /* line 9, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_footer.scss */
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 30px;
+  }
+}
+
+/* line 22, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_footer.scss */
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 18px;
+     -moz-column-gap: 18px;
+          column-gap: 18px;
+  width: 318px;
+  font-size: 12px;
+  /* Mobile XS */
+}
+
+/* line 31, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_footer.scss */
+.footer__logo b {
+  font-size: 16px;
+}
+
+@media (max-width: 599px) {
+  /* line 22, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_footer.scss */
+  .footer__logo {
+    width: 100%;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+}
+
+/* line 42, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_footer.scss */
+.footer__contacts {
+  width: 266px;
+}
+
+/* line 46, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_footer.scss */
+.footer__item {
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 18px;
+}
+
+/* line 51, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_footer.scss */
+.footer__item:last-child {
+  margin-bottom: 0;
+}
+
+/* line 55, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_footer.scss */
+.footer__item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 70, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_footer.scss */
+.footer__item.pin::before {
+  background-image: url("./../img/icons/pin.svg");
+}
+
+/* line 74, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_footer.scss */
+.footer__item.phone::before {
+  background-image: url("./../img/icons/phone.svg");
+}
+
+/* line 78, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_footer.scss */
+.footer__item.email::before {
+  background-image: url("./../img/icons/email.svg");
+}
+
+/* line 82, ../../../../OneDrive/Рабочий стол/Проги и т.п/IT/для работы/work projects/accounting/sass/section/_footer.scss */
+.footer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 15px;
+  width: 265px;
+}
+/*# sourceMappingURL=main.css.map */
