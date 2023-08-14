@@ -13,7 +13,7 @@ The work is optimized for Google Page Speed (98%).
 
 Адаптивная, кроссбраузерная, валидная верстка лендинга по макету из Figma. 
 
-Использованные технологии: <b>HTML5, CSS3, Sass(SCSS), JavaScript, JQery</b>
+Использованные технологии: <b>HTML5, CSS3, Sass(SCSS), JavaScript, JQuery</b>
 
 В ходе верстки выполнены элементы: мобильное меню, форма обратной связи, слайдер Swiper с zoom изображения, Google карта.
 
