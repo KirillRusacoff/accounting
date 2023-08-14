@@ -1,0 +1,45 @@
+.nav-menu {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.85);
+
+    &--active {
+        display: block;
+    }
+}
+
+.nav-menu__list {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 360px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+
+    padding: 60px 0;
+
+    background-color: #fff;
+    border: 10px solid $primeryColor;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 320px;
+    }
+}
+
+

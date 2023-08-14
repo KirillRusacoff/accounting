@@ -1,0 +1,90 @@
+.slider {
+    width: 396px;
+
+    img {
+        cursor: pointer;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 100%;
+    }
+}
+
+.swiper {
+    width: 396px;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 100%;
+    }
+
+}
+
+#magnify {
+    display: none;
+    position: fixed;
+    max-width: 1000px;
+    
+    height: 100vh;
+    z-index: 9; 
+    
+    /* Mobile XS */
+    @media (max-width: 400px) {
+        max-width: 100%;
+        height: 440px;
+    }
+}
+
+#magnify img {
+    width: 100%;
+}
+
+  /* затемняющий фон */
+#overlay {
+    display: none;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 8;
+}
+
+ /* кнопка закрытия */
+#close-popup {
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+#close-popup i {
+    width: 30px;
+    height: 30px;
+    background: url('./../img/icons/cross.svg') no-repeat center center;
+    background-size: 16px 16px;
+    display: block;
+}
+
+@keyframes rota {
+    25% { transform: rotate(360deg); }
+}
+
+#close-popup:hover {
+    animation: rota 4s infinite normal;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}

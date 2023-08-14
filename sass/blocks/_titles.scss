@@ -1,0 +1,42 @@
+.title {
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    font-weight: 700;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        font-size: 32px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 26px;
+    }
+}
+
+.title-2 {
+    font-family: 'Merriweather', serif;
+    font-size: 32px;
+    font-weight: 700;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        font-size: 28px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        font-size: 22px;
+    }
+
+    span {
+        color: $accentColor;
+    }
+}
+
+.title-3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: $accentColor;
+}

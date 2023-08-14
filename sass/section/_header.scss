@@ -1,0 +1,147 @@
+.header-top {
+    padding: 15px 0;   
+}
+
+.header-top__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top__logo {
+    display: flex;
+    column-gap: 14px;
+    align-items: center;
+
+    span {
+        width: 62px;
+
+        font-weight: 700;
+        line-height: 1;
+        
+    }
+}
+
+.header__nav {
+    display: flex;
+    column-gap: 80px;
+
+    font-family: 'Open Sans', sans-serif;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        display: none;
+    }
+}
+
+.header__contacts {
+    display: flex;
+    align-items: center;
+    column-gap: 34px;
+}
+
+.link {
+    span {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        color: $accentColor;
+
+    }
+}
+
+.header-top .link {
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        display: none;
+    }
+}
+
+.header {
+    padding: 120px 0 134px;
+
+    /* Tablet */
+    @media (max-width: 1169px) {
+        padding-top: 80px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding: 60px 0;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding: 40px 0;
+    }
+}
+
+.header-wrapper {
+    position: relative;
+}
+
+.header__content {
+    position: relative;
+    z-index: 2;
+
+    width: 754px;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        width: 550px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 100%;
+    }
+}
+
+.header__title {
+    margin-bottom: 30px;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-bottom: 20px;
+    }
+}
+
+.header__subtitle {
+    margin-bottom: 40px;
+
+    font-size: 20px;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-bottom: 25px;
+
+        font-size: 18px;
+    }
+}
+
+.header__img {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translateX(-55%);
+    transform: translateY(-50%);
+    z-index: 1;
+
+    width: 769px;
+    height: 451px;
+    overflow: hidden;
+
+    /* Tablet */
+    @media (max-width: 1169px) {
+        top: 80%;
+        left: 60%;
+        width: 528px;
+        height: 309px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        display: none;
+    }
+    
+}

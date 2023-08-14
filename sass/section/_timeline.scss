@@ -1,0 +1,38 @@
+.timeline {
+    padding: 75px 15px 80px;
+
+    background-color: $primeryColor;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding: 60px 15px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding: 40px 15px;
+    }
+}
+
+.timeline__inner {
+    max-width: 558px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.timeline__title {
+    margin-bottom: 85px;
+
+    color: #fff;
+
+    /* Tablet */
+    @media (max-width: 768px) {
+        margin-bottom: 70px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        margin-bottom: 60px;
+    }
+}
