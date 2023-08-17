@@ -7,7 +7,7 @@ Technologies used: <b>HTML5, CSS3, Sass(CSS), JavaScript, Jquery</b>
 
 During the layout, the following elements were made: mobile menu, feedback form, Sweeper slider with zoom images, Google map.
 
-The work is optimized for Google Page Speed (98%).
+The work is optimized for Google Page Speed (98).
 
 ********************
 
@@ -17,7 +17,7 @@ The work is optimized for Google Page Speed (98%).
 
 В ходе верстки выполнены элементы: мобильное меню, форма обратной связи, слайдер Swiper с zoom изображения, Google карта.
 
-Работа оптимизирована под  Google Page Speed(98%).
+Работа оптимизирована под  Google Page Speed(98).
 
 ********************
 
